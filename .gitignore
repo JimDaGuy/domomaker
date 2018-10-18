@@ -1,3 +1,5 @@
+.eslintignore 
+
 # Logs
 logs
 *.log
