@@ -42,7 +42,5 @@ const makeDomo = (req, res) => {
   return domoPromise;
 };
 
-module.exports = {
-  makerPage,
-  make: makeDomo,
-};
+module.exports.makerPage = makerPage;
+module.exports.make = makeDomo;
