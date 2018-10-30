@@ -63,7 +63,6 @@ app.use(cookieParser());
 
 app.use(csrf());
 app.use((err, req, res, next) => {
-  console.dir('Got here?');
   if (err.code !== 'EBADCSRFTOKEN') return next(err);
 
   console.log('Missing CSRF token');
